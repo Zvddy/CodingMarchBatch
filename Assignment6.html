@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        h1 {
+            color: yellow;
+            font-size: 40px;
+            position: absolute;
+            top: -25px;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            display: inline;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+            margin-right: 30px;
+        }
+        .sig {
+            background-color: purple;
+            color: white;
+            border-radius: 100px;
+        }
+        .log, .sig {
+            padding: 10px 30px;
+        }
+        .hov:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        .button {
+            position: relative;
+            top: 15px;
+        }
+        img {
+            position: absolute;
+            right: 100px;
+            top: 150px;
+        }
+        .life {
+            font-weight: 900;
+            font-family: Tahoma;
+            font-size: 70px;
+        }
+        .best {
+            font-size: 20px;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+        .div {
+            position: absolute;
+            top: 70px;
+            left: 100px;
+        }
+        .btn {
+            border: none;
+            background-color: purple;
+            padding: 10px 15px;
+            color: white;
+            border-radius: 100px;
+        }
+        .bnt {
+            border: none;
+            padding: 10px 15px;
+            background-color: white;
+        }
+        @media screen and (max-width:600px) {
+            body {
+                background-color: white;
+            }
+            li {
+                display: block;
+            }
+            /* a {
+                color: black;
+            } */
+            ul {
+                position: absolute;
+                top: 60px;
+                left: 60px;
+            }
+            .div {
+                color: black;
+                position: absolute;
+                top: 150px;
+                right: 100px;
+            }
+            .life {
+                font-size: 40px;
+            }
+            .best {
+                font-size: 15px;
+            }
+            img {
+                position: absolute;
+                top: 500px;
+                right: 80px;
+                width: 400px;
+            }
+            h1 {
+                position: absolute;
+                right: 390px;
+            }.button {
+                position: absolute;
+                right: 0px;
+                top: 25px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nep">
+            <h1>nepal</h1>
+        </div>
+        <ul>
+            <li>
+                <a href="" class="hov">About</a>
+            </li>
+            <li>
+                <a href="" class="hov">Services</a>
+            </li>
+            <li>
+                <a href="" class="hov">Pricing</a>
+            </li>
+            <li>
+                <a href="" class="hov">Contact</a>
+            </li>
+        </ul>
+        <div class="button">
+            <a href="" class="log">Login</a>
+            <a href="" class="sig">Sign up</a>
+        </div>
+        <div class="div">
+            <p class="life">Life is short<br>and the world<br>is wide!</p>
+            <p class="best">To get the best of your adventure you just<br>
+            need to leave and go where you like. We are<br>
+            waiting for you.</p>
+            <button class="btn">Plan a Trip ></button>
+            <button class="bnt">Watch Video</button>
+        </div>
+        <div>
+            <img src="zaddy.jpg" alt="">
+        </div>
+    </nav>
+</body>
+</html>
