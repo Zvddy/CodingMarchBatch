@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 7</title>
+    <style>
+        nav {
+            display: flex;
+            justify-content: space-around;
+        }
+        h2 {
+            font-size: 40px;
+            font-family: Verdana;
+            position: relative;
+            top: -35px;
+            left: 50px;
+        }
+        .span {
+            color: orangered;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li {
+            display: inline;
+            position: relative;
+            left: 40px;
+        }
+        a {
+            text-decoration: none;
+            color: rgb(15, 15, 70);
+            font-weight: 700;
+            margin-left: 30px;
+        }
+        .opa {
+            opacity: 0.5;
+        }
+        li a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        .log {
+            margin-left: 0px;
+        }
+        .sig {
+            background-color: rgb(15, 15, 70);
+            color: white;
+            border-radius: 100px;
+            margin-left: 10px;
+        }
+        .log, .sig {
+            padding: 10px 30px;
+            position: relative;
+            top: 15px;
+        }.note {
+            position: absolute;
+            top: 80px;
+            left: 100px;
+        }.big {
+            font-size: 70px;
+            font-weight: 900;
+            font-family: Verdana;
+            color: rgb(15, 15, 70);
+        }
+        .small {
+            font-weight: 700;
+            font-family: Tahoma;
+            font-size: 12px;
+            position: relative;
+            top: -60px;
+            color: rgb(15, 15, 70);
+        }
+        button{
+            position: relative;
+            top: -40px;
+        }
+        .btn {
+            border: none;
+            background-color: rgb(15, 15, 70);
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+        .bnt {
+            border: none;
+            background-color: white;
+            color: rgb(15, 15, 70);
+            padding: 10px 15px;
+            font-weight: 700;
+        }
+        .pic {
+            width: 40px;
+            border: 1px solid;
+            border-radius: 100px;
+            padding: 5px;
+            position: relative;
+            top: 10px;
+            color: rgb(15, 15, 70);
+        }
+        .span1 {
+            font-weight: 700;
+            font-size: 15px;
+            position: relative;
+            top: -30px;
+            left: 10px;
+            color: rgb(15, 15, 70);
+        }
+        .span2 {
+            font-size: 10px;
+            position: relative;
+            top: -35px;
+            left: 67px;
+            color: rgb(15, 15, 70);
+        }
+        .image {
+            width: 700px;
+            height: 480px;
+            position: absolute;
+            top: 100px;
+            right: 150px;
+        }
+        @media screen and (max-width:600px) {
+            li {
+                display: block;
+            }
+            ul {
+                position: absolute;
+                top: 70px;
+                left: -40px;
+            }
+            .log {
+                margin-left: 70px;
+            }
+            .note {
+                position: absolute;
+                top: 150px;
+                left: 69px;
+            }
+            .big {
+                font-size: 50px;
+            }
+            .small {
+                font-size: 10px;
+                position: relative;
+                top: -50px;
+                left: 7px;
+            }
+            .image {
+                width: 500px;
+                height: 400px;
+                position: absolute;
+                top: 580px;
+                left: 40px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="travel">
+            <h2>Tra<span class="span">vel</span>.com</h2>
+        </div>
+        <ul>
+            <li>
+                <a href="">Home</a>
+            </li>
+            <li>
+                <a href="" class="opa">Product</a>
+            </li>
+            <li>
+                <a href="" class="opa">Resources</a>
+            </li>
+            <li>
+                <a href="" class="opa">Contact</a>
+            </li>
+            <li>
+                <a href="" class="opa">Blog</a>
+            </li>
+        </ul>
+        <div class="button">
+            <a href="" class="log">Login</a>
+            <a href="" class="sig">Sign Up</a>
+        </div>
+        <div class="note">
+            <p class="big">Explore<br>Beautiful<br>World.</p>
+            <p class="small">Traveling is one about leadership and chartering your own<br>
+            when everybody else is doing the same thing.</p>
+            <button class="btn">Explore Now</button>
+            <button class="bnt">Play Demo</button><br>
+            <img src="download.png" alt="" class="pic">
+            <span class="span1">1000+ Hiking</span><br>
+            <span class="span2">More than 100 professional and amateur<br>
+            climbers use our facilities within a month.</span>
+        </div>
+        <div>
+            <img src="ass.jpg" alt="" class="image">
+        </div>
+    </nav>
+</body>
+</html>
