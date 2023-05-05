@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 9</title>
+    <style>
+        section {
+            display: flex;
+            justify-content: space-between;
+            height: 640px;
+        }
+        .one {
+        flex: 33.3%;
+        }
+        .two {
+            flex: 33.4%;
+            background-color: blue;
+        }
+        .three {
+            flex: 33.3%;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <div class="one">One</div>
+        <div class="two">Two</div>
+        <div class="three">Three</div>
+    </section>
+
+    <script>
+        let one = document.querySelector(".one");
+        let two = document.querySelector(".two");
+        let three = document.querySelector(".three");
+
+        let oneColor = window.prompt("Enter your first color");
+        let twoColor = window.prompt("Enter your second color");
+        let threeColor = window.prompt("Enter your third color");
+
+        one.style.backgroundColor = oneColor;
+        two.style.backgroundColor = twoColor;
+        three.style.backgroundColor = threeColor;
+
+        one.innerHTML = oneColor;
+        two.innerHTML = twoColor;
+        three.innerHTML = threeColor;
+    </script>
+</body>
+</html>
