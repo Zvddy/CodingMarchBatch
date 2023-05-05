@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <style>
+        .box {
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border:1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <button class="btn">Change Color</button>
+    </div>
+
+    <script>
+        let  div = document.querySelector(".box");
+        let  btn = document.querySelector(".btn");
+
+        let colors = ["red", "green", "blue", "yellow", "purple", "cyan", "orange", "gray", "black", "brown"];
+        let count = -1;
+        
+        btn.addEventListener("click", () => {
+            count++;
+            div.style.backgroundColor = colors[count];
+            
+            if (count == 10) {
+                count= 0;
+                div.style.backgroundColor = colors[count];
+            }
+            console.log(count);
+        })
+    </script>
+</body>
+</html>
