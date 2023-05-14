@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="name">ZADDY</div>
+            <ul>
+                <li>HOME</li>
+                <li>PRODUCT</li>
+                <li>ABOUT</li>
+                <li>SUPPORT</li>
+            </ul>
+            <img src="search.svg" class="search">
+            <img src="cart.svg" class="cart">
+        </nav>
+        <div class="always">
+            <h2>Always<br>Be Your<br>Self</h2>
+            <p class="energy">Soft<span class="drink"> Drink</span></p><br>
+            <p class="order">Total order:<span class="price">#200.00</span></p><br>
+            <p class="quantity">Quantity:</p>
+            <button class="decrease"><</button><span class="number">1</span><button class="increase">></button><br><br>
+            <!-- <button class="buy">Buy Now</button> -->
+        </div>
+        <div class="image">
+            <img src="three.jpg" alt="" class="coke">
+        </div>
+        <div class="small">
+            <img src="coke.jpg" alt="" class="coke1">
+            <img src="fanta.jpg" alt="" class="fanta">
+            <img src="sprite2.jpg" alt="" class="sprite">
+        </div>
+    </section>
+
+    <script>
+
+        let coke = document.querySelector(".coke1");
+        let fanta = document.querySelector(".fanta");
+        let sprite = document.querySelector(".sprite");
+        let image = document.querySelector(".coke");
+        let coke1 = document.querySelector(".energy")
+
+        coke.onclick = function change() {
+            image.src = "coke1.png";
+            coke1.innerHTML = "Coca Cola"
+        };
+        fanta.onclick = function change() {
+            image.src = "fanta1.jpg";
+            coke1.innerHTML = "Fanta";
+        };
+        sprite.onclick = function change() {
+            image.src = "sprite1.png";
+            coke1.innerHTML = "Sprite";
+        }
+        
+        let user = [
+            {
+                price: ["#200.00"],
+                number:[ 1 ]
+            },
+            {
+                price: ["#400.00"],
+                number:[ 2 ]
+            },
+            {
+                price: ["#600.00"],
+                number: [3]
+            }
+        ];
+
+        let button1 = document.querySelector(".decrease");
+        let button2 = document.querySelector(".increase");
+        let price = document.querySelector(".price");
+        let number = document.querySelector(".number");
+
+        let count = 0;
+
+        button2.addEventListener("click", function change() {
+            count++
+            price.innerHTML = user[count].price;
+            number.innerHTML = user[count].number;
+        })
+        button1.addEventListener("click", function change() {
+            count--
+            price.innerHTML = user[count].price;
+            number.innerHTML = user[count].number;
+        })
+    </script>
+</body>
+</html>

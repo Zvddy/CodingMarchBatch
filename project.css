@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 16px 40px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    display: inline;
+    margin-left: 50px;
+}
+.search {
+    margin-right: -150px;
+}
+.cart {
+    margin-right: 30px
+}
+.always {
+    position: absolute;
+    top: 150px;
+    left: 120px;
+}
+h2 {
+    font-size: 60px;
+    font-family: Verdana, sans-serif;
+}
+.energy {
+    font-size: 35px;
+    font-family: Verdana, sans-serif;
+    color: gray;
+}
+.drink {
+    color: rgb(240, 240, 99);
+}
+.order {
+    font-size: 20px;
+    font-family: Verdana, sans-serif;
+    color: gray;
+}
+.price {
+    color: black;
+    font-weight: 900;
+}
+.coke {
+    width: 500px;
+    height: 400px;
+    position: relative;
+    top: 100px;
+    left: 450px;
+}
+.coke1 {
+    width: 200px;
+}
+.sprite {
+    width: 200px;
+}
+.coke1 {
+    position: relative;
+    bottom: 400px;
+    left: 1050px;
+}
+.fanta {
+    width: 130px;
+    height: 140px;
+    position: relative;
+    left: 884px;
+    bottom: 250px;
+}
+.sprite {
+    width: 140px;
+    position: relative;
+    left: 750px;
+    bottom: 50px;
+}
+button {
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+.buy {
+    background-color: black;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 100px;
+}
+.number {
+    font-weight: 900;
+}
